@@ -1,0 +1,13 @@
+name: Gerar APK
+on: [workflow_dispatch]
+jobs:
+  build:
+      runs-on: ubuntu-latest
+          steps:
+                - uses: actions/checkout@v4
+                      - name: Descompactar e listar arquivos
+                              run: |
+                                        unzip -q *.zip
+                                                  ls -la
+                                                            find . -maxdepth 3
+                                                            
